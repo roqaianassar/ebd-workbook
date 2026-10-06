@@ -16,10 +16,10 @@
  * @returns {string}
  */
 export function productName(product) {
-  export function productName(product) {
+  
   return product.name;
 }
-}
+
 
 /**
  * Reads whichever field it is asked for.
@@ -32,10 +32,10 @@ export function productName(product) {
  * @returns {*} whatever is stored under that key
  */
 export function getField(product, field) {
- export function getField(product, field) {
+ 
   return product[field];
 }
-}
+
 
 /**
  * The city a student lives in.
@@ -46,10 +46,10 @@ export function getField(product, field) {
  * @returns {string}
  */
 export function studentCity(student) {
-  export function studentCity(student) {
+  
   return student.address.city;
 }
-}
+
 
 /**
  * A one-line summary of a product.
@@ -61,11 +61,11 @@ export function studentCity(student) {
  * @returns {string}
  */
 export function summarize(product) {
-  export function summarize(product) {
+ 
   const { name, price } = product;
   return `${name} costs ${price} EGP`;
 }
-}
+
 
 /**
  * A copy of a product with a different price.
@@ -79,7 +79,7 @@ export function summarize(product) {
  * @returns {object} a new product, with every other key the same
  */
 export function withPrice(product, newPrice) {
-  export function withPrice(product, newPrice) {
+  
   return { ...product, price: newPrice };
 }
-}
+
